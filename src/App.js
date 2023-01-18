@@ -1,45 +1,45 @@
-import { useState, useEffect } from 'react';
-import ReactDOM from "react-dom";
-import Pages from './pages/Pages';
-import Category from './components/Category';
-import Search from './components/Search';
-import {BrowserRouter} from 'react-router-dom';
-import styled from 'styled-components';
-import {GiKnifeFork} from 'react-icons/gi';
-import {Link} from 'react-router-dom';
+// import ReactDOM from "react-dom";
+import Pages from "./pages/Pages";
+import Category from "./components/Category";
+import Search from "./components/Search";
+import { BrowserRouter } from "react-router-dom";
+import styled from "styled-components";
+// import { GiKnifeFork } from "react-icons/gi";
+import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
 
 function App() {
-
-    return (
-        <div className="App">
-            <BrowserRouter>
-                <Nav>
-                    <div className='logo'>
-                        {/* <GiKnifeFork/> */}
-                        <Logo to={"/"} className="logo-name">Delicious</Logo>
-                    </div>
-                    <Category />
-                    <Search />
-                </Nav>
-                <Pages/>
-                <Footer/>
-            </BrowserRouter>
-        </div>
-    );
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Nav>
+          <div className="logo">
+            {/* <GiKnifeFork/> */}
+            <Logo to={"/"} className="logo-name">
+              Delicious
+            </Logo>
+          </div>
+          <Category />
+          <Search />
+        </Nav>
+        <Pages />
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 const Logo = styled(Link)`
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-family: 'Lobster Two', sans-serif;
-    transition: .2s;
-    width: 200%;
-    color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: "Lobster Two", sans-serif;
+  transition: 0.2s;
+  width: 200%;
+  color: var(--text-color);
 `;
 
-const Nav = styled.div `
+const Nav = styled.div`
     padding 0.5rem 0rem;
     display: flex;
     justify-content: center;
