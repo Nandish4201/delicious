@@ -1,23 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import React from "react";
+import styled from "styled-components";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    
     <FooterContainer>
-          <p>&copy; 2022 <a target="_blank" href='https://saimcode.vercel.app'>Saimcode</a> All Rights Reserved.</p>
+      <p>
+        &copy; 2022{" "}
+        <a target="_blank" rel="noreferrer" href="https://saimcode.vercel.app">
+          Saimcode
+        </a>{" "}
+        All Rights Reserved.
+      </p>
       <SocialLinks>
-            <a target="_blank" href="https://www.linkedin.com/in/saim-qureshi-703060234/">
-              <FaLinkedin />
-            </a>
-            <a target="_blank" href="https://github.com/Saimcode/">
-              <FaGithub />
-            </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/saim-qureshi-703060234/"
+        >
+          <FaLinkedin />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/Saimcode/">
+          <FaGithub />
+        </a>
       </SocialLinks>
     </FooterContainer>
-
-  )
+  );
 }
 
 const FooterContainer = styled.footer`
@@ -32,7 +40,7 @@ const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   a {
     color: var(--text-color-dark);
     text-decoration: none;
@@ -47,29 +55,28 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 2rem 0; 
+    padding: 0 0 2rem 0;
   }
-`
+`;
 
 const SocialLinks = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 
-    svg {
-      font-size: 1.5rem;
-    }
+  svg {
+    font-size: 1.5rem;
+  }
 
-    a {
-      color: var(--text-color);
-      text-decoration: none;
+  a {
+    color: var(--text-color);
+    text-decoration: none;
 
-      &:hover {
+    &:hover {
       color: var(--first-color);
-      }
     }
+  }
+`;
 
-`
-
-export default Footer
+export default Footer;
