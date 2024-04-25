@@ -35,13 +35,6 @@ It's a web-based program so you would need the following:
 * A browser to run the application.
 * Link to the website: [Delicious | Food Recipe Website](https://admirable-figolla-2fc73f.netlify.app/)
 * ⚠️NOTE: I am using free version of Spoonacular which restricts the user requests to 150 per day. So, if the website link above is not showing any recipes then that means the requests have reached their daily limit. Apologies for this.
-
-## ❔ Help
-
-Contact me on the links below:
-* [Linkedin](https://www.linkedin.com/in/saim-qureshi-703060234?original_referer=https%3A%2F%2Fsaimcode.github.io%2F)
-* [Instagram](https://www.instagram.com/_saim.f/)
-
 ## 🛠 Languages & Tools Used
 
 * React JS for building the UI
